@@ -1,12 +1,12 @@
-import { GRAPHQL } from '../../../services/graphql';
+import { GRAPHQL } from "../../../services/graphql";
 import {
   LOGIN_REQUEST,
   LOGIN_SUCCES,
   LOGIN_FAIL
-} from '../../contstants/login';
-import { loginMutation } from './queries';
+} from "../../contstants/login";
+import { loginMutation } from "./queries";
 
-export const login = (payload) => {
+export const login = payload => {
   return {
     type: GRAPHQL,
     payload: {
@@ -14,5 +14,5 @@ export const login = (payload) => {
       variables: payload,
       actions: [LOGIN_REQUEST, LOGIN_SUCCES, LOGIN_FAIL]
     }
-  }
-}
+  };
+};

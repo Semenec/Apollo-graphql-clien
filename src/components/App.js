@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
+import "./App.css";
 
 // Pages
-import LoginPage from '../containers/pages/LoginPage';
-import RegistrationPage from '../containers/pages/RegistrationPage';
+import LoginPage from "../containers/pages/LoginPage";
+import RegistrationPage from "../containers/pages/RegistrationPage";
 
 class App extends Component {
   render() {
